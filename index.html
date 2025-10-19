@@ -130,17 +130,15 @@
                 </article>
             </section>
 
+           
             <section id="contacto" class="cv-section">
-            <h2 class="subtitle">6. ¡Contáctame! 💬</h2>
-            
-            <form action="mailto:ivansali@espol.edul.ec" method="post" enctype="text/plain" class="contact-form">
+                <h2 class="section-title">6. ¡Contáctame! 💬</h2>
                 
-                <div class="form-group">
+                <form action="mailto:ivansali@espol.edul.ec" method="post" enctype="text/plain" class="contact-form-flat">
+                    
                     <label for="nombre">Tu Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
-                </div>
-
-                <div class="form-group">
+                    
                     <label for="motivo">Motivo del Contacto:</label>
                     <select id="motivo" name="motivo" required>
                         <option value="" disabled selected>Selecciona un motivo</option>
@@ -149,57 +147,72 @@
                         <option value="duda">Pregunta Técnica / Duda</option>
                         <option value="otro">Otro</option>
                     </select>
-                </div>
 
-                <div class="form-group radio-group">
                     <p>¿Qué tipo de proyecto te interesa?</p>
-                    
                     <label>
                         <input type="radio" name="tipo_proyecto" value="frontend" required>
                         Front-End (HTML/CSS)
                     </label>
-                    
                     <label>
                         <input type="radio" name="tipo_proyecto" value="fullstack">
                         Full-Stack
                     </label>
-                    
                     <label>
                         <input type="radio" name="tipo_proyecto" value="unity">
                         Unity/Simulador
                     </label>
-                </div>
-
-                <div class="form-group checkbox-group">
-                    <p>Habilidades que necesitas (Selección Múltiple):</p>
                     
+
+                    <p>Habilidades que necesitas (Selección Múltiple):</p>
                     <label>
                         <input type="checkbox" name="habilidades_necesarias" value="diseno_web">
                         Diseño Web (Figma/Photoshop)
                     </label>
-                    
                     <label>
                         <input type="checkbox" name="habilidades_necesarias" value="logica_backend">
                         Lógica Back-End (Python/Java)
                     </label>
-                    
                     <label>
                         <input type="checkbox" name="habilidades_necesarias" value="bases_datos">
                         Bases de Datos (MySQL)
                     </label>
-                </div>
+                    
 
-                <div class="form-group">
                     <label for="mensaje">Tu Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describe tu proyecto o pregunta..."></textarea>
-                </div>
-                
-                <div class="form-group">
+                    
                     <button type="submit" class="submit-button">Enviar Mensaje</button>
-                </div>
 
-            </form>
+                </form>
             </section>
+            
+            <section id="referencias" class="cv-section">
+                <h2>Referencias</h2>
+                
+                <article>
+                    <h3>Referencia Profesional 1</h3>
+                    <p>Contacto: </p>
+                    <p>Relación: </p>
+                    <p>Teléfono/Correo:</p>
+                </article>
+                
+                <article>
+                    <h3>Referencia Académica 1</h3>
+                    <p>Contacto: </p>
+                    <p>Institución: ESPOL</p>
+                    <p>Asignatura:</p>
+                </article>
+                
+                <article>
+                    <h3>Referencia Personal</h3>
+                    <p>Contacto: Ivan Salinas</p>
+                    <p>Relación: Mentor</p>
+                    <p>Experiencia: Experiencia en base de datos </p>
+                </article>
+
+            </section>
+
+
 
         </main>
 
