@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV Interactivo - Iván Andrés Salinas Castillo</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        
         
     </head>
     
@@ -44,12 +45,12 @@
         <main class="cv-main-content">
 
             <section id="perfil" class="cv-section">
-                <h2 class="section-title">1. Perfil Profesional</h2>
+                <h2 class="subtitle">1. Perfil Profesional</h2>
                 <p>Desarrollador Front-End con sólidos conocimientos en la estructuración de contenido con HTML5 y la aplicación de estilos con CSS3. Apasionado por crear interfaces de usuario limpias y funcionales. Busco aplicar mi capacidad de aprendizaje rápido y mis habilidades en herramientas de diseño en proyectos desafiantes.</p>
             </section>
 
             <section id="habilidades" class="cv-section">
-                <h2 class="section-title">2. Habilidades Técnicas</h2>
+                <h2 class="subtitle">2. Habilidades Técnicas</h2>
 
                 <table class="skills-table">
                     <thead>
@@ -75,7 +76,7 @@
             </section>
 
             <section id="experiencia" class="cv-section">
-                <h2 class="section-title">3. Experiencia y Proyectos Clave</h2>
+                <h2 class="subtitle">3. Experiencia y Proyectos Clave</h2>
                 
                 <article class="experience-item">
                     <h3>Pasantía como Desarrollador de Software</h3>
@@ -89,7 +90,7 @@
             </section>
             
             <section id="adicionales" class="cv-section">
-                <h2 class="section-title">4. Idiomas y Habilidades Interpersonales</h2>
+                <h2 class="subtitle">4. Idiomas y Habilidades Interpersonales</h2>
                 
                 <div class="language-skill">
                     <h3>Idioma</h3>
@@ -118,15 +119,86 @@
             </section>
 
             <section id="formacion" class="cv-section">
-                <h2 class="section-title">5. Formación Académica</h2>
+                <h2 class="subtitle">5. Formación Académica</h2>
                 
                 <article class="education-item">
                     <h3>Ingeniería en Ciencias de la Computación</h3>
                     <p class="institution">ESPOL</p>
                     <p class="dates">2022 - Actualidad</p>
-                    <img src="sources/img/espol.jpg" alt="Logo de ESPOL" width="100" class="institution-logo" style="display: block; margin-top: 10px;">
+                    <img id="photo" src="sources/img/espol.jpg" alt="Logo de ESPOL" width="100" class="institution-logo" style="display: block; margin-top: 10px;">
 
                 </article>
+            </section>
+
+            <section id="contacto" class="cv-section">
+            <h2 class="subtitle">6. ¡Contáctame! 💬</h2>
+            
+            <form action="mailto:ivansali@espol.edul.ec" method="post" enctype="text/plain" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="motivo">Motivo del Contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Selecciona un motivo</option>
+                        <option value="trabajo">Oferta de Empleo</option>
+                        <option value="proyecto">Proyecto Personal / Colaboración</option>
+                        <option value="duda">Pregunta Técnica / Duda</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group radio-group">
+                    <p>¿Qué tipo de proyecto te interesa?</p>
+                    
+                    <label>
+                        <input type="radio" name="tipo_proyecto" value="frontend" required>
+                        Front-End (HTML/CSS)
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="tipo_proyecto" value="fullstack">
+                        Full-Stack
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="tipo_proyecto" value="unity">
+                        Unity/Simulador
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <p>Habilidades que necesitas (Selección Múltiple):</p>
+                    
+                    <label>
+                        <input type="checkbox" name="habilidades_necesarias" value="diseno_web">
+                        Diseño Web (Figma/Photoshop)
+                    </label>
+                    
+                    <label>
+                        <input type="checkbox" name="habilidades_necesarias" value="logica_backend">
+                        Lógica Back-End (Python/Java)
+                    </label>
+                    
+                    <label>
+                        <input type="checkbox" name="habilidades_necesarias" value="bases_datos">
+                        Bases de Datos (MySQL)
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describe tu proyecto o pregunta..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Enviar Mensaje</button>
+                </div>
+
+            </form>
             </section>
 
         </main>
